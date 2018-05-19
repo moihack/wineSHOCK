@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v8.0.0m3-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>192.168.1.2/pts/clear_d3d_test.exe</URL>
+      <MD5>855925850efca9fe2305309e7dca6274</MD5>
+      <FileSize>8704</FileSize>
+      <PlatformSpecific>Windows</PlatformSpecific>
+    </Package>
+    <Package>
+      <URL>192.168.1.2/pts/clear_d3d_test.exe</URL>
+      <MD5>855925850efca9fe2305309e7dca6274</MD5>
+      <FileSize>8704</FileSize>
+      <PlatformSpecific>Linux</PlatformSpecific>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>

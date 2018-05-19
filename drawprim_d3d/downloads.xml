@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v8.0.0m3-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>192.168.1.2/pts/drawprim_d3d_test.exe</URL>
+	  <MD5>0dfe96ace650eeeb35c0043b62e0e7ab</MD5>
+      <FileSize>11776</FileSize>
+      <PlatformSpecific>Windows</PlatformSpecific>
+    </Package>
+	<Package>
+      <URL>192.168.1.2/pts/drawprim_d3d_test.exe</URL>
+	  <MD5>0dfe96ace650eeeb35c0043b62e0e7ab</MD5>
+      <FileSize>11776</FileSize>
+      <PlatformSpecific>Linux</PlatformSpecific>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>
