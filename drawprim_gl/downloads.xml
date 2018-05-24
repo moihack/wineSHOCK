@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v7.2.0m1-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>192.168.1.2/pts/drawprim_gl_test.exe</URL>
+      <MD5>08c28deae3614ea1046f6e233bcffe07</MD5>
+      <FileSize>11264</FileSize>
+      <PlatformSpecific>Windows</PlatformSpecific>
+    </Package>
+	<Package>
+      <URL>https://sourceforge.net/projects/glew/files/glew/2.1.0/glew-2.1.0-win32.zip</URL>
+      <PlatformSpecific>Windows</PlatformSpecific>
+    </Package>
+	<Package>
+      <URL>https://www.transmissionzero.co.uk/files/software/development/GLUT/freeglut-MinGW.zip</URL>
+      <PlatformSpecific>Windows</PlatformSpecific>
+    </Package>
+    <Package>
+      <URL>192.168.1.2/pts/drawprim_gl_test.exe</URL>
+      <MD5>08c28deae3614ea1046f6e233bcffe07</MD5>
+      <FileSize>11264</FileSize>
+      <PlatformSpecific>Linux</PlatformSpecific>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>
