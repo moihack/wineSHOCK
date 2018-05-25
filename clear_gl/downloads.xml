@@ -3,9 +3,9 @@
 <PhoronixTestSuite>
   <Downloads>
     <Package>
-      <URL>https://github.com/moihack/wineSHOCK/releases/download/gl_microbenchmarks/drawprim_gl_test.exe</URL>
-      <MD5>08c28deae3614ea1046f6e233bcffe07</MD5>
-      <FileSize>11264</FileSize>
+      <URL>https://github.com/moihack/wineSHOCK/releases/download/gl_microbenchmarks/clear_gl_test.exe</URL>
+      <MD5>d065e877b2ecc6f68a956cb372a8c1d1</MD5>
+      <FileSize>8192</FileSize>
       <PlatformSpecific>Windows</PlatformSpecific>
     </Package>
 	<Package>
@@ -19,9 +19,9 @@
 	  <PlatformSpecific>Linux</PlatformSpecific>
     </Package>
     <Package>
-      <URL>https://github.com/moihack/wineSHOCK/releases/download/gl_microbenchmarks/drawprim_gl_test.exe</URL>
-      <MD5>08c28deae3614ea1046f6e233bcffe07</MD5>
-      <FileSize>11264</FileSize>
+      <URL>https://github.com/moihack/wineSHOCK/releases/download/gl_microbenchmarks/clear_gl_test.exe</URL>
+      <MD5>d065e877b2ecc6f68a956cb372a8c1d1</MD5>
+      <FileSize>8192</FileSize>
       <PlatformSpecific>Linux</PlatformSpecific>
     </Package>
   </Downloads>
