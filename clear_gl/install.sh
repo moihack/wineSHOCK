@@ -7,7 +7,7 @@ rm freeglut-MinGW.zip glew-2.1.0-win32.zip
 
 echo "#!/bin/sh
 ping 127.0.0.1 -n %PHPSLEEP% > /dev/null
-./clear_gl_test.exe 15 > \$LOG_FILE" > clear_gl
+wine ./clear_gl_test.exe 15 > \$LOG_FILE" > clear_gl
 
 chmod +x clear_gl_test.exe
 chmod +x clear_gl
