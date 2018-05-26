@@ -3,13 +3,13 @@
 <PhoronixTestSuite>
   <Downloads>
     <Package>
-      <URL>192.168.1.2/pts/streamsrc_d3d_test.exe</URL>
+      <URL>https://github.com/moihack/wineSHOCK/releases/download/microbenchmarks/streamsrc_d3d_test.exe</URL>
       <MD5>4a19ece9d4e787041ccd0e4d6242c89f</MD5>
       <FileSize>11264</FileSize>
       <PlatformSpecific>Windows</PlatformSpecific>
     </Package>
     <Package>
-      <URL>192.168.1.2/pts/streamsrc_d3d_test.exe</URL>
+      <URL>https://github.com/moihack/wineSHOCK/releases/download/microbenchmarks/streamsrc_d3d_test.exe</URL>
       <MD5>4a19ece9d4e787041ccd0e4d6242c89f</MD5>
       <FileSize>11264</FileSize>
       <PlatformSpecific>Linux</PlatformSpecific>

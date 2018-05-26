@@ -3,13 +3,13 @@
 <PhoronixTestSuite>
   <Downloads>
     <Package>
-      <URL>192.168.1.2/pts/dynbuffer_d3d_test.exe</URL>
+      <URL>https://github.com/moihack/wineSHOCK/releases/download/microbenchmarks/dynbuffer_d3d_test.exe</URL>
       <MD5>8ffd9c72c9955968ef5245cf11a75f61</MD5>
       <FileSize>11264</FileSize>
       <PlatformSpecific>Windows</PlatformSpecific>
     </Package>
 	<Package>
-      <URL>192.168.1.2/pts/dynbuffer_d3d_test.exe</URL>
+      <URL>https://github.com/moihack/wineSHOCK/releases/download/microbenchmarks/dynbuffer_d3d_test.exe</URL>
       <MD5>8ffd9c72c9955968ef5245cf11a75f61</MD5>
       <FileSize>11264</FileSize>
       <PlatformSpecific>Linux</PlatformSpecific>
