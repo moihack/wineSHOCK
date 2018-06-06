@@ -6,23 +6,15 @@
       <URL>https://github.com/moihack/wineSHOCK/releases/download/gl_microbenchmarks/drawprim_gl_test.exe</URL>
       <MD5>08c28deae3614ea1046f6e233bcffe07</MD5>
       <FileSize>11264</FileSize>
-      <PlatformSpecific>Windows</PlatformSpecific>
+      <PlatformSpecific>Windows, Linux</PlatformSpecific>
     </Package>
 	<Package>
       <URL>https://sourceforge.net/projects/glew/files/glew/2.1.0/glew-2.1.0-win32.zip</URL>
-      <PlatformSpecific>Windows</PlatformSpecific>
-	  <PlatformSpecific>Linux</PlatformSpecific>
+      <PlatformSpecific>Windows, Linux</PlatformSpecific>
     </Package>
 	<Package>
       <URL>https://www.transmissionzero.co.uk/files/software/development/GLUT/freeglut-MinGW.zip</URL>
       <PlatformSpecific>Windows</PlatformSpecific>
-	  <PlatformSpecific>Linux</PlatformSpecific>
-    </Package>
-    <Package>
-      <URL>https://github.com/moihack/wineSHOCK/releases/download/gl_microbenchmarks/drawprim_gl_test.exe</URL>
-      <MD5>08c28deae3614ea1046f6e233bcffe07</MD5>
-      <FileSize>11264</FileSize>
-      <PlatformSpecific>Linux</PlatformSpecific>
     </Package>
   </Downloads>
 </PhoronixTestSuite>
