@@ -1,5 +1,14 @@
 #!/bin/sh
 
+WGETCMD=$(command -v wget | wc -l)
+
+if [ "$WGETCMD" != "1" ]; then
+  echo "wget not found! Exiting"
+  exit
+else
+  wget https://www.transmissionzero.co.uk/files/software/development/GLUT/freeglut-MinGW.zip
+fi
+
 unzip -j -o "freeglut-MinGW.zip" "freeglut/bin/freeglut.dll" "freeglut.dll"
 unzip -j -o "glew-2.1.0-win32.zip" "glew-2.1.0/bin/Release/Win32/glew32.dll" "glew32.dll"
 

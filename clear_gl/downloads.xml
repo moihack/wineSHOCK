@@ -6,23 +6,15 @@
       <URL>https://github.com/moihack/wineSHOCK/releases/download/gl_microbenchmarks/clear_gl_test.exe</URL>
       <MD5>d065e877b2ecc6f68a956cb372a8c1d1</MD5>
       <FileSize>8192</FileSize>
-      <PlatformSpecific>Windows</PlatformSpecific>
+      <PlatformSpecific>Windows, Linux</PlatformSpecific>
     </Package>
 	<Package>
       <URL>https://sourceforge.net/projects/glew/files/glew/2.1.0/glew-2.1.0-win32.zip</URL>
-      <PlatformSpecific>Windows</PlatformSpecific>
-	  <PlatformSpecific>Linux</PlatformSpecific>
+      <PlatformSpecific>Windows, Linux</PlatformSpecific>
     </Package>
 	<Package>
       <URL>https://www.transmissionzero.co.uk/files/software/development/GLUT/freeglut-MinGW.zip</URL>
       <PlatformSpecific>Windows</PlatformSpecific>
-	  <PlatformSpecific>Linux</PlatformSpecific>
-    </Package>
-    <Package>
-      <URL>https://github.com/moihack/wineSHOCK/releases/download/gl_microbenchmarks/clear_gl_test.exe</URL>
-      <MD5>d065e877b2ecc6f68a956cb372a8c1d1</MD5>
-      <FileSize>8192</FileSize>
-      <PlatformSpecific>Linux</PlatformSpecific>
     </Package>
   </Downloads>
 </PhoronixTestSuite>
