@@ -1,0 +1,10 @@
+--- a/pts-core/objects/phodevi/phodevi.php	2018-06-05 16:15:38.000000000 +0300
++++ b/pts-core/objects/phodevi/phodevi.php	2018-06-07 18:22:57.622880300 +0300
+@@ -625,6 +625,7 @@
+ 	{
+ 		// Returns the system's uptime in seconds
+ 		$uptime = 1;
++		echo "\nYou are running a custom patched version of PTS 8\n";
+ 
+ 		if(phodevi::is_windows())
+ 		{
