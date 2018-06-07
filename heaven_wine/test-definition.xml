@@ -7,7 +7,7 @@
     <Description>This test calculates the average frame-rate within the Heaven demo for the Unigine engine. This engine is extremely demanding on the system's graphics card. On Linux it runs the Windows version via Wine.</Description>
     <ResultScale>Frames Per Second</ResultScale>
     <Proportion>HIB</Proportion>
-    <TimesToRun>1</TimesToRun>
+    <TimesToRun>3</TimesToRun>
   </TestInformation>
   <TestProfile>
     <Version>1.6.4</Version>

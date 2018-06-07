@@ -5,12 +5,7 @@
     <Package>
       <URL>ftp://ftp.cstula.ru/software/test/unigine_heaven/Unigine_Heaven-4.0.exe, http://assets.unigine.com/d/Unigine_Heaven-4.0.exe</URL>
       <FileSize>258726912</FileSize>
-      <PlatformSpecific>Linux</PlatformSpecific>
-    </Package>
-    <Package>
-      <URL>ftp://ftp.cstula.ru/software/test/unigine_heaven/Unigine_Heaven-4.0.exe, http://assets.unigine.com/d/Unigine_Heaven-4.0.exe</URL>
-      <FileSize>258726912</FileSize>
-      <PlatformSpecific>Windows</PlatformSpecific>
+      <PlatformSpecific>Windows, Linux</PlatformSpecific>
     </Package>
   </Downloads>
 </PhoronixTestSuite>

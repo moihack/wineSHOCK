@@ -6,4 +6,4 @@ cd \"C:\Program Files (x86)\Unigine\Heaven Benchmark 4.0\bin\"
 
 # This assumes you will install to the default location
 # C:\Program Files (x86)\Unigine\
-./Unigine_Heaven-4.0.exe
+./Unigine_Heaven-4.0.exe /SILENT
