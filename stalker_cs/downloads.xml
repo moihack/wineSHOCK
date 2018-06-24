@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v8.0.0-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>http://files.gsc-game.com/st/bench/stkcs-bench-setup.exe</URL>
+      <MD5>8544b9113b560faa7a2d5db9807c68dd</MD5>
+      <FileSize>399815808</FileSize>
+      <PlatformSpecific>Windows, Linux</PlatformSpecific>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>
