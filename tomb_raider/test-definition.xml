@@ -20,5 +20,6 @@
     <EnvironmentSize>1</EnvironmentSize>
     <ProjectURL>http://www.invalid.com</ProjectURL>
     <Maintainer>Dimitris Gounaridis</Maintainer>
+    <ExternalDependencies>wine</ExternalDependencies>
   </TestProfile>
 </PhoronixTestSuite>

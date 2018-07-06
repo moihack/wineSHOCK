@@ -9,9 +9,11 @@ rm benchmarkresult*.txt
 
 cd "$WINEPREFIX/drive_c/Program Files (x86)/Steam"
 
-#wine ./Steam.exe -silent -login $STEAMUSER $STEAMPASSWD -applaunch 203160 -benchmarkini tomb.ini
-
-wine ./Steam.exe -applaunch 203160 -benchmarkini $CWD/tomb.ini &
+if [ "$STEAMUSER" = "" ]; then
+    wine ./Steam.exe -applaunch 203160 -benchmarkini $CWD/tomb.ini &
+else
+    wine ./Steam.exe -silent -login $STEAMUSER $STEAMPWD -applaunch 203160 -benchmarkini tomb.ini &
+fi
 
 cd "$WINEPREFIX/drive_c/Program Files (x86)/Steam/steamapps/common/Tomb Raider"
 
