@@ -65,9 +65,9 @@ chmod 444 config.txt
 OSNAME=$(uname -s)
 
 if [ "$OSNAME" = "Linux" ]; then
-    mkdir -p "/home/$USER/Documents/AvP_D3D11_Benchmark"
+    mkdir -p "$WINEPREFIX/drive_c/users/$USER/My Documents/AvP_D3D11_Benchmark"
     #in case cp is alias to cp -i
-    /bin/cp -rf config.txt "/home/$USER/Documents/AvP_D3D11_Benchmark/config.txt"
+    /bin/cp -rf config.txt "$WINEPREFIX/drive_c/users/$USER/My Documents/AvP_D3D11_Benchmark/config.txt"
 else
     mkdir -p "C:/Users/$USERNAME/My Documents/AvP_D3D11_Benchmark"
     /bin/cp -rf config.txt "C:/Users/$USERNAME/My Documents/AvP_D3D11_Benchmark/config.txt"
