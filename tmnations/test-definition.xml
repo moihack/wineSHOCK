@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v8.0.0-->
+<PhoronixTestSuite>
+  <TestInformation>
+    <Title>tmnations</Title>
+    <AppVersion>1.0</AppVersion>
+    <Description>This runs the Trackmania Nations graphics benchmark</Description>
+    <ResultScale>Frames Per Second</ResultScale>
+    <Proportion>HIB</Proportion>
+    <TimesToRun>3</TimesToRun>
+  </TestInformation>
+  <TestProfile>
+    <Version>1.0.8</Version>
+    <SupportedPlatforms>Windows, Linux</SupportedPlatforms>
+    <SoftwareType>Game</SoftwareType>
+    <TestType>Graphics</TestType>
+    <License>Retail</License>
+    <Status>Unverified</Status>
+    <SupportedArchitectures>x86, x86_64</SupportedArchitectures>
+    <EnvironmentSize>713</EnvironmentSize>
+    <ProjectURL>http://www.trackmanianations.com</ProjectURL>
+    <Maintainer>Dimitris Gounaridis</Maintainer>
+  </TestProfile>
+</PhoronixTestSuite>

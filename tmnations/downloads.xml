@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v8.0.0-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>http://static3.cdn.ubi.com/trackmania/tmnationsforever_setup.exe</URL>
+      <MD5>198434c0538b9d3269e857dd0ad5ba22</MD5>
+      <FileSize>529246504</FileSize>
+      <PlatformSpecific>Windows, Linux</PlatformSpecific>
+    </Package>
+    <Package>
+      <URL>https://github.com/moihack/wineSHOCK/releases/download/tmnations/Default.SystemConfig.Gbx</URL>
+      <MD5>b995ba2bf9a0e9ce06fe78fe49e03702</MD5>
+      <FileSize>581</FileSize>
+      <PlatformSpecific>Windows, Linux</PlatformSpecific>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>
