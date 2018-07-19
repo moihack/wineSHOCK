@@ -3,6 +3,10 @@
 <PhoronixTestSuite>
   <Downloads>
     <Package>
+      <URL>https://autohotkey.com/download/ahk.zip</URL>
+      <PlatformSpecific>Windows</PlatformSpecific>
+    </Package>
+    <Package>
       <URL>https://download.nvidia.com/downloads/nZone/demos/nzd_crysis_spdemo.exe</URL>
       <MD5>c6d021405da9b96ce26a5a136779b011</MD5>
       <FileSize>1902019901</FileSize>
