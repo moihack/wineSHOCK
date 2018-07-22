@@ -2,6 +2,7 @@
 
 mv "aliens-vs-predator-D3D11-Benchmark-v1.03.msi" "aliens.msi"
 
+#install benchmark
 wine msiexec /i aliens.msi /quiet /qn
 
 echo '#!/bin/sh
@@ -21,3 +22,12 @@ cd "$WINEPREFIX/drive_c/users/$USER/My Documents/AvP_D3D11_Benchmark"
 grep "Average FPS:" AvP_*.txt > $LOG_FILE' > aliens
 
 chmod +x ./aliens
+
+#install dx runtime so game displays properly
+wine ./directx_Jun2010_redist.exe /Q /T:"C:/dxsdk"
+cd "$WINEPREFIX/drive_c/dxsdk"
+wine ./DXSETUP.exe /silent
+
+#cleanup
+cd ..
+rm -rf dxsdk

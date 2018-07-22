@@ -8,5 +8,11 @@
       <FileSize>318512128</FileSize>
       <PlatformSpecific>Windows, Linux</PlatformSpecific>
     </Package>
+    <Package>
+      <URL>https://www.microsoft.com/en-us/download/details.aspx?id=8109</URL>
+      <MD5>7c1fc2021cf57fed3c25c9b03cd0c31a</MD5>
+      <FileSize>100271992</FileSize>
+      <PlatformSpecific>Linux</PlatformSpecific>
+    </Package>
   </Downloads>
 </PhoronixTestSuite>
