@@ -1,0 +1,127 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v7.2.0m1-->
+<PhoronixTestSuite>
+  <TestInformation>
+    <Title>World in Conflict - DEMO</Title>
+    <AppVersion>1.011</AppVersion>
+    <Description>This runs the builtin benchmark of the World in Conflict Demo</Description>
+    <ResultScale>Frames Per Second</ResultScale>
+    <Proportion>HIB</Proportion>
+    <TimesToRun>3</TimesToRun>
+  </TestInformation>
+  <TestProfile>
+    <Version>1.0.5</Version>
+    <SupportedPlatforms>Windows, Linux</SupportedPlatforms>
+    <SoftwareType>Game</SoftwareType>
+    <TestType>Graphics</TestType>
+    <License>Retail</License>
+    <Status>Unverified</Status>
+    <SupportedArchitectures>x86, x86_64</SupportedArchitectures>
+    <EnvironmentSize>1250</EnvironmentSize>
+    <ProjectURL>http://worldinconflict.de.ubi.com/</ProjectURL>
+    <Maintainer>Dimitris Gounaridis</Maintainer>
+  </TestProfile>
+  <TestSettings>
+    <Option>
+      <DisplayName>Resolution</DisplayName>
+      <Identifier>auto-resolution</Identifier>
+      <ArgumentPrefix></ArgumentPrefix>
+      <ArgumentPostfix></ArgumentPostfix>
+      <DefaultEntry>0</DefaultEntry>
+      <Menu>
+        <Entry>
+          <Name>$VIDEO_WIDTH x $VIDEO_HEIGHT</Name>
+          <Value>-width $VIDEO_WIDTH -height $VIDEO_HEIGHT</Value>
+          <Message></Message>
+        </Entry>
+      </Menu>
+    </Option>
+    <Option>
+      <DisplayName>Quality preset</DisplayName>
+      <Identifier>quality</Identifier>
+      <ArgumentPrefix>-quality </ArgumentPrefix>
+      <ArgumentPostfix></ArgumentPostfix>
+      <DefaultEntry>0</DefaultEntry>
+      <Menu>
+        <Entry>
+          <Name>Very Low Quality</Name>
+          <Value>VeryLow</Value>
+          <Message></Message>
+        </Entry>
+        <Entry>
+          <Name>Low Quality</Name>
+          <Value>Low</Value>
+          <Message></Message>
+        </Entry>
+        <Entry>
+          <Name>Medium Quality</Name>
+          <Value>Medium</Value>
+          <Message></Message>
+        </Entry>
+        <Entry>
+          <Name>High Quality</Name>
+          <Value>High</Value>
+          <Message></Message>
+        </Entry>
+        <Entry>
+          <Name>Very High Quality</Name>
+          <Value>VeryHigh</Value>
+          <Message></Message>
+        </Entry>
+      </Menu>
+    </Option>
+    <Option>
+      <DisplayName>Fullscreen</DisplayName>
+      <Identifier>fullscreen</Identifier>
+      <ArgumentPrefix>-fullscreen </ArgumentPrefix>
+      <ArgumentPostfix></ArgumentPostfix>
+      <DefaultEntry>0</DefaultEntry>
+      <Menu>
+        <Entry>
+          <Name>Yes</Name>
+          <Value>1</Value>
+          <Message></Message>
+        </Entry>
+        <Entry>
+          <Name>No</Name>
+          <Value>0</Value>
+          <Message></Message>
+        </Entry>
+      </Menu>
+    </Option>
+    <Option>
+      <DisplayName>Antialias</DisplayName>
+      <Identifier>antialias</Identifier>
+      <ArgumentPrefix>-antialias </ArgumentPrefix>
+      <ArgumentPostfix></ArgumentPostfix>
+      <DefaultEntry>0</DefaultEntry>
+      <Menu>
+        <Entry>
+          <Name>Off</Name>
+          <Value>0</Value>
+          <Message></Message>
+        </Entry>
+        <Entry>
+          <Name>2x</Name>
+          <Value>2</Value>
+          <Message></Message>
+        </Entry>
+        <Entry>
+          <Name>4x</Name>
+          <Value>4</Value>
+          <Message></Message>
+        </Entry>
+        <Entry>
+          <Name>8x</Name>
+          <Value>8</Value>
+          <Message></Message>
+        </Entry>
+        <Entry>
+          <Name>16x</Name>
+          <Value>16</Value>
+          <Message></Message>
+        </Entry>
+      </Menu>
+    </Option>
+  </TestSettings>
+</PhoronixTestSuite>
