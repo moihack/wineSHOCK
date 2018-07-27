@@ -108,8 +108,16 @@ Click 60, 290                   ; Save
 winwaitactive, TmForever
 ControlClick Button5    ; Exit' > config.ahk
 
-cd ahk
-./AutoHotKeyU64.exe ../config.ahk $str &
+OSNAME=$(uname -s)
 
-cd "C:/Program Files (x86)/TmNationsForever"
-./TmForeverLauncher.exe
+if [ "$OSNAME" = "Linux" ]; then
+    cd ahk
+    wine ./AutoHotKeyU64.exe ../config.ahk $str &    
+    cd "$WINEPREFIX/drive_c/Program Files (x86)/TmNationsForever"
+    wine ./TmForeverLauncher.exe
+else
+    cd ahk
+    ./AutoHotKeyU64.exe ../config.ahk $str &    
+    cd "C:/Program Files (x86)/TmNationsForever"
+    ./TmForeverLauncher.exe
+fi
