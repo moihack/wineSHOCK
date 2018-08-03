@@ -44,9 +44,9 @@ Sleep 500
 Send {Tab}
 Sleep 500
 Send {Enter}
-Sleep 500
+Sleep 2000
 Send !{f4}
-Sleep 500
+Sleep 2000
 Send !{f4}" > activate_3dmark06.ahk
 
 echo '#!/bin/sh
