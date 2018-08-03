@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v8.0.0-->
+<PhoronixTestSuite>
+  <Downloads>
+    <Package>
+      <URL>https://benchmarks.ul.com/downloads/3dmark06.exe</URL>
+      <MD5>112aec4a1326b0a38723a865817a1c6e</MD5>
+      <FileSize>613259032</FileSize>
+      <PlatformSpecific>Windows, Linux</PlatformSpecific>
+    </Package>
+    <Package>
+      <URL>https://download.microsoft.com/download/8/4/A/84A35BF1-DAFE-4AE8-82AF-AD2AE20B6B14/directx_Jun2010_redist.exe</URL>
+      <MD5>7c1fc2021cf57fed3c25c9b03cd0c31a</MD5>
+      <FileSize>100271992</FileSize>
+      <PlatformSpecific>Linux</PlatformSpecific>
+    </Package>
+    <Package>
+      <URL>https://autohotkey.com/download/ahk.zip</URL>
+      <FileSize>1</FileSize>
+      <PlatformSpecific>Windows, Linux</PlatformSpecific>
+    </Package>
+  </Downloads>
+</PhoronixTestSuite>
