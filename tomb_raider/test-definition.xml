@@ -3,14 +3,14 @@
 <PhoronixTestSuite>
   <TestInformation>
     <Title>Tomb Raider (2013)</Title>
-    <AppVersion>0.2</AppVersion>
+    <AppVersion>1.0</AppVersion>
     <Description>This runs Tomb Raider (2013) Steam version built-in benchmark.</Description>
     <ResultScale>Frames Per Second</ResultScale>
     <Proportion>HIB</Proportion>
     <TimesToRun>3</TimesToRun>
   </TestInformation>
   <TestProfile>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <SupportedPlatforms>Windows, Linux</SupportedPlatforms>
     <SoftwareType>Game</SoftwareType>
     <TestType>Graphics</TestType>
