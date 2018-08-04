@@ -14,5 +14,11 @@
       <FileSize>100271992</FileSize>
       <PlatformSpecific>Linux</PlatformSpecific>
     </Package>
+    <Package>
+      <URL>http://dl.winehq.org/wine/wine-mono/4.7.3/wine-mono-4.7.3.msi</URL>
+      <MD5>29dcd975e74b9c6c170e646a28dee57a</MD5>
+      <FileSize>56470528</FileSize>
+      <PlatformSpecific>Linux</PlatformSpecific>
+    </Package>
   </Downloads>
 </PhoronixTestSuite>

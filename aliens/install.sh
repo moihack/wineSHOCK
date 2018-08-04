@@ -2,6 +2,9 @@
 
 mv "aliens-vs-predator-D3D11-Benchmark-v1.03.msi" "aliens.msi"
 
+#install mono - installer needs .NET 3.5 SP1 or higher
+wine msiexec /i wine-mono-4.7.3.msi /qn
+
 #install benchmark
 wine msiexec /i aliens.msi /quiet /qn
 
