@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v8.0.1-->
+<PhoronixTestSuite>
+  <SuiteInformation>
+    <Title>Direct3D microbenchmarks</Title>
+    <Version>1.0.0</Version>
+    <TestType>Graphics</TestType>
+    <Description>This runs the Direct3D wine microbenchmarks by Stefan Doesinger.</Description>
+    <Maintainer>Dimitris Gounaridis</Maintainer>
+  </SuiteInformation>
+  <Execute>
+    <Test>moihack/clear_d3d</Test>
+    <Arguments></Arguments>
+    <Description></Description>
+  </Execute>
+  <Execute>
+    <Test>moihack/drawprim_d3d</Test>
+    <Arguments></Arguments>
+    <Description></Description>
+  </Execute>
+  <Execute>
+    <Test>moihack/dynbuffer_d3d</Test>
+    <Arguments></Arguments>
+    <Description></Description>
+  </Execute>
+  <Execute>
+    <Test>moihack/streamsrc_d3d</Test>
+    <Arguments></Arguments>
+    <Description></Description>
+  </Execute>
+</PhoronixTestSuite>

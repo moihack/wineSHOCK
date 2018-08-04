@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v8.0.1-->
+<PhoronixTestSuite>
+  <SuiteInformation>
+    <Title>OpenGL microbenchmarks</Title>
+    <Version>1.0.0</Version>
+    <TestType>Graphics</TestType>
+    <Description>This runs the OpenGL wine microbenchmarks by Stefan Doesinger.</Description>
+    <Maintainer>Dimitris Gounaridis</Maintainer>
+  </SuiteInformation>
+  <Execute>
+    <Test>moihack/clear_gl</Test>
+    <Arguments></Arguments>
+    <Description></Description>
+  </Execute>
+  <Execute>
+    <Test>moihack/drawprim_gl</Test>
+    <Arguments></Arguments>
+    <Description></Description>
+  </Execute>
+</PhoronixTestSuite>
