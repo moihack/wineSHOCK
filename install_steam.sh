@@ -7,6 +7,7 @@ if [ "$WGETCMD" != "1" ]; then
   echo "wget not found! Exiting"
   exit
 else
+  rm SteamSetup.exe
   echo "Downloading Steam for Windows"
   wget http://media.steampowered.com/client/installer/SteamSetup.exe
 fi

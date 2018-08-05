@@ -1,0 +1,20 @@
+--- ./pts-core/objects/client/pts_tests.php	2018-06-12 16:48:46.000000000 +0300
++++ ./pts-core/objects/client/pts_tests_gsoc_mod.php	2018-08-05 17:19:40.398681280 +0300
+@@ -164,14 +164,14 @@
+ 			$extra_vars = self::$extra_env_vars;
+ 		}
+ 
+-		$extra_vars['HOME'] = $test_profile->get_install_dir();
+-		$extra_vars['DEBUG_HOME'] = $test_profile->get_install_dir();
++		//$extra_vars['HOME'] = $test_profile->get_install_dir();
++		//$extra_vars['DEBUG_HOME'] = $test_profile->get_install_dir();
+ 		$extra_vars['PATH'] = "\$PATH";
+ 		$extra_vars['LC_ALL'] = '';
+ 		$extra_vars['LC_NUMERIC'] = '';
+ 		$extra_vars['LC_CTYPE'] = '';
+ 		$extra_vars['LC_MESSAGES'] = '';
+-		$extra_vars['LANG'] = '';
++		//$extra_vars['LANG'] = '';
+ 		$extra_vars['PHP_BIN'] = PHP_BIN;
+ 
+ 		// Safe-guards to try to ensure more accurate testing
