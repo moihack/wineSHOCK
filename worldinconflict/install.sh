@@ -48,10 +48,7 @@ cd ..
 
 echo '#!/bin/sh
 
-#get all parameters and output them in one var
-#we want to output str="'$*'"
-#we escape the single quote inside single quotes
-str="'\''$*'\''"
+str=$*
 
 #write config with ahk
 cd ahk 
@@ -60,7 +57,9 @@ wine ./AutoHotKeyU64.exe ../run.ahk $str
 #run game via wine
 cd "$WINEPREFIX/drive_c/Program Files (x86)/Sierra Entertainment/World in Conflict - DEMO"
 wine ./wic.exe -dx9 -benchmarksaveandexit
-cd "$WINEPREFIX/drive_c/users/$USER/My Documents/World in Conflict - DEMO"
+
+documents_path=$(xdg-user-dir DOCUMENTS)
+cd "$documents_path/World in Conflict - DEMO"
 head -n3 fpsdata.txt > $LOG_FILE' > worldinconflict
 chmod +x ./worldinconflict
 

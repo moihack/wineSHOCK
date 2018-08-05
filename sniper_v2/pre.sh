@@ -59,9 +59,10 @@ chmod 444 Settings.ini
 OSNAME=$(uname -s)
 
 if [ "$OSNAME" = "Linux" ]; then
-    mkdir -p "$WINEPREFIX/drive_c/users/$USER/My Documents/SniperEliteV2_Benchmark"
+    documents_path=$(xdg-user-dir DOCUMENTS)
+    mkdir -p "$documents_path/SniperEliteV2_Benchmark"
     #in case cp is alias to cp -i
-    /bin/cp -rf Settings.ini "$WINEPREFIX/drive_c/users/$USER/My Documents/SniperEliteV2_Benchmark/Settings.ini"
+    /bin/cp -rf Settings.ini "$documents_path/SniperEliteV2_Benchmark/Settings.ini"
 else
     mkdir -p "C:/Users/$USERNAME/My Documents/SniperEliteV2_Benchmark"
     /bin/cp -rf Settings.ini "C:/Users/$USERNAME/My Documents/SniperEliteV2_Benchmark/Settings.ini"

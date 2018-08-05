@@ -9,18 +9,21 @@ wine msiexec /i wine-mono-4.7.3.msi /qn
 wine msiexec /i aliens.msi /quiet /qn
 
 echo '#!/bin/sh
-rm "$WINEPREFIX/drive_c/users/$USER/My Documents/AvP_D3D11_Benchmark/AvP_"*.txt
-cd "$WINEPREFIX/drive_c/Program Files (x86)/Rebellion/AvP D3D11 Benchmark"
-wine ./AvP_D3D11_Benchmark.exe -config="$WINEPREFIX/drive_c/users/$USER/My Documents/AvP_D3D11_Benchmark/config.txt"
 
-while [ ! -f "$WINEPREFIX/drive_c/users/$USER/My Documents/AvP_D3D11_Benchmark/AvP_"*.txt ]
+documents_path=$(xdg-user-dir DOCUMENTS)
+
+rm "$documents_path/AvP_D3D11_Benchmark/AvP_"*.txt
+cd "$WINEPREFIX/drive_c/Program Files (x86)/Rebellion/AvP D3D11 Benchmark"
+wine ./AvP_D3D11_Benchmark.exe -config="$documents_path/AvP_D3D11_Benchmark/config.txt"
+
+while [ ! -f "$documents_path/AvP_D3D11_Benchmark/AvP_"*.txt ]
 do
   sleep 10 #check again in 10 seconds if benchmark finished running
 done
 
 sleep 5
 
-cd "$WINEPREFIX/drive_c/users/$USER/My Documents/AvP_D3D11_Benchmark"
+cd "$documents_path/AvP_D3D11_Benchmark"
 
 grep "Average FPS:" AvP_*.txt > $LOG_FILE' > aliens
 
