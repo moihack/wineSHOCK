@@ -51,8 +51,9 @@ sys_spec_Water = 2
 OSNAME=$(uname -s)
 
 if [ "$OSNAME" = "Linux" ]; then
-    mkdir -p "$WINEPREFIX/drive_c/users/$USER/My Documents/My Games/CRYSIS_SP_DEMO"
-    cp game.cfg "$WINEPREFIX/drive_c/users/$USER/My Documents/My Games/CRYSIS_SP_DEMO/game.cfg"
+    documents_path=$(xdg-user-dir DOCUMENTS)
+    mkdir -p "$documents_path/My Games/CRYSIS_SP_DEMO"
+    cp game.cfg "$documents_path/My Games/CRYSIS_SP_DEMO/game.cfg"
 else
     mkdir -p "C:/Users/$USERNAME/My Documents/My Games/CRYSIS_SP_DEMO"
     cp game.cfg "C:/Users/$USERNAME/My Documents/My Games/CRYSIS_SP_DEMO/game.cfg"
