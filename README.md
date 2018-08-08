@@ -22,6 +22,9 @@ test-profile | a set of files (scripts + xml) that is used to install and monito
 test-suite | a predefined collection of PTS test-profiles that installs and runs multiple profiles with one command
 
 ## Setting up PTS
+
+First make sure you have installed at least php-cli for your Linux distribution.
+
 To quickly setup PTS open a terminal and run:
 ```bash
 git clone https://github.com/moihack/wineSHOCK -b patsh && cd wineSHOCK && ./pts_setup.sh
@@ -63,24 +66,16 @@ source ../pts_setup.sh
 ./phoronix-test-suite run moihack/clear_d3d
 ```
 
-## NOTES
-The PTS test-profiles contained in **profiles** branch, report that are cross-platform supporting both Windows and Linux.
+**To run PTS on _Windows_**, first grab PTS [8.0.1 release](https://github.com/phoronix-test-suite/phoronix-test-suite/archive/v8.0.1.zip) and unpack it anywhere in your computer. You will also need **PHP _for Windows_** and **Cygwin**. 
 
-However this is partially true.
-The test-profiles are designed specifically for testing Wine Direct3D/gaming performance across different Wine versions.
-They run (and can be used) for measuring performance on native Windows systems too.
+Afterwards simply open a command prompt window in phoronix-test-suite folder and run:
+```bash
+phoronix-test-suite.bat install {test-name}
+#or
+phoronix-test-suite.at run {test-name}
+```
 
-The Linux version of the scripts is just a modification of the Windows profiles that launch games via Wine.
-This allows to natively run PTS on Linux hosts without needing Cygwin,PHP and other things which could break things when running inside Wine.
-
-This has the disadvantage that 2 separate versions have to be maintained for each test-profile.
-There is currently the not-so-well-tested [USE_WINE](https://github.com/phoronix-test-suite/phoronix-test-suite/blob/master/pts-core/modules/use_wine.php) tag that one can use in a PTS test-profile. Using it will install (with automatic modifications on the fly) the Windows version of a profile on a Linux host which would not be possible otherwise.
-
-~~Please keep in mind, that depending on the test-profile, the Linux version may differ more or less than the Windows version of the same profile.
-That is because when launching wine from PTS sometimes "bugs" occurred mainly revolving around localization issues.~~
-Solved thanks to [this](https://github.com/moihack/wineSHOCK/blob/patsh/0003-pts_tests.patch).
-
-Todo: How to create a new test-profile
+**Note:** PTS does *not* need the [pts_prerun.sh](https://github.com/moihack/wineSHOCK/blob/patsh/pts_prerun.sh) to run on Windows.
 
 ## Test-Profiles created during GSoC 2018
 Game | Notes
@@ -98,26 +93,51 @@ Game | Notes
 [Direct3D microbenchmarks](http://openbenchmarking.org/suite/moihack/direct3d_microbenchmarks) | A test-suite of the Direct3D microbenchmarks by Stefan Dösinger.
 [OpenGL microbenchmarks](http://openbenchmarking.org/suite/moihack/opengl_microbenchmarks) | A test-suite of the OpenGL microbenchmarks by Stefan Dösinger. | PTS had trouble downloading the freeglut libraries, so wget had to be used during the installation in order to fetch the needed libraries.
 
+The full list of available tests can be found at the [profiles branch](https://github.com/moihack/wineSHOCK/tree/profiles) or at my [openbenchmarking repository](http://openbenchmarking.org/user/moihack).
+
+## NOTES
+The PTS test-profiles contained in **profiles** branch, report that are cross-platform supporting both Windows and Linux.
+
+However this is partially true.
+The test-profiles are designed specifically for testing Wine Direct3D/gaming performance across different Wine versions.
+They run (and can be used) for measuring performance on native Windows systems too.
+
+The Linux version of the scripts is just a modification of the Windows profiles that launch games via Wine.
+This allows to natively run PTS on Linux hosts without needing Cygwin,PHP and other things which could break things when running inside Wine.
+
+This has the disadvantage that 2 separate versions have to be maintained for each test-profile.
+There is currently the not-so-well-tested [USE_WINE](https://github.com/phoronix-test-suite/phoronix-test-suite/blob/master/pts-core/modules/use_wine.php) tag that one can use in a PTS test-profile. Using it will install (with automatic modifications on the fly) the Windows version of a profile on a Linux host which would not be possible otherwise.
+
+~~Please keep in mind, that depending on the test-profile, the Linux version may differ more or less than the Windows version of the same profile.
+That is because when launching wine from PTS sometimes "bugs" occurred mainly revolving around localization issues.~~
+Solved thanks to [this](https://github.com/moihack/wineSHOCK/blob/patsh/0003-pts_tests.patch).
+
+## [**How to create a new test-profile**](https://github.com/moihack/wineSHOCK/how_to_create_test-profile.md)
+_In order for this document to stay "small" in size I've decided to cover the instructions on how to create a new test-profile for PTS in a separate file._
+
 ## Future Improvements
 
 ### Changes to improve the test-profiles
-* Add support for configuring game settings via PTS. Currently most profiles run with the same settings each time without asking the user. Only 3DMark06, TrackMania and World in Conflict currently support being reconfigured via PTS.
+* Add support for configuring game settings via PTS. Currently most profiles run with the same settings each time without asking the user. Only 3DMark06, TrackMania and World in Conflict support being re-configured via PTS for the time being.
 * Use forward slash in all profiles when possible.
 * Do some clean-up to save some code lines. Some while loops that are checking if a benchmark finished running can potentially be deleted.
-* Re-write World in Conflict - DEMO to use bash instead of ahk and make of pre.sh scripts to config the game.
+* Re-write World in Conflict - DEMO to use bash instead of ahk and make use of pre.sh script to config the game.
 * Try to get the Windows and Linux version identical so USE_WINE tag can be used for some profiles.
 
 ### Games that feature a built-in benchmark, yet do not have a test-profile available
 Game | Notes
 ------------ | -------------
-Devil May Cry 4 | Features standalone benchmark. Runs fine under wine. Does not output results to file/stdout. Needs ahk to launch benchmark option.
-Mafia II (Steam) | Runs fine under wine. Does not output results to file/stdout. Needs ahk to launch benchmark option.
+Devil May Cry 4 | Features standalone benchmark. Runs fine under wine. Does not output results to file/stdout. Needs ahk to launch benchmark.
+Mafia II (Steam) | Runs fine under wine. Does not output results to file/stdout. Needs ahk to launch benchmark.
 Alien: Isolation (Steam) | Runs fine under [wine-staging-nine from Arch repos](https://www.archlinux.org/packages/multilib/x86_64/wine-staging-nine/). Does not run with vanilla wine. See [Bug:45216](https://bugs.winehq.org/show_bug.cgi?id=45216)
 Hitman Absolution (Steam) | Runs fine under wine. Currently launching the game's benchmark crashes. See [Bug:45215/43584](https://bugs.winehq.org/show_bug.cgi?id=43584)
 DiRT, F1 games (Steam) | Most of these games don't boot or display a blackscreen when trying to play. They output the results to an .xml file but they need ahk to navigate to the benchmark options.
 Bioshock: Infinite (Steam) | Launching but hanging before the main menu.
 Batman: Arkham Games (Steam) | They don't run under current wine (maybe they can boot with specific winetricks and oldest wine versions).
-Middle-earth: Shadow of Mordor (Steam) | Currently does not run under wine. Needs ahk to launch benchmark option.
+Middle-earth: Shadow of Mordor (Steam) | Currently does not run under wine. Needs ahk to launch benchmark.
 Call of Juarez | Features standalone DX10 benchmark. Does not run under wine due to securom complaining about some registry entries being tampered.
 Rise of the Tomb Raider | Don't own it so didn't test. Should be working as Tomb Raider (2013) under wine though.
 Metro 2033 : Redux (Steam) | The game runs on wine but the benchmark config app that comes with the game needs .NET and does not run under wine. The game will output an error even on Windows when trying to launch it with benchmark parameters (obtained from Process Explorer)
+Just Cause 2 (Steam) | Does not boot under wine currently. Does not output to file/stdout. Needs ahk to launch benchmark.
+Sid Meier's Civilization® V (Steam) | Does not work under wine. The launcher shows up but game quits with error (possibly related to DRM issues). Offers benchmarking command line options though.
+Sleeping Dogs: Definitive Edition (Steam) | Does not work under wine. Needs ahk to launch benchmark. Does not output results to file/stdout.
