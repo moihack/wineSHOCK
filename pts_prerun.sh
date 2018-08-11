@@ -14,6 +14,9 @@ export TEST_RESULTS_IDENTIFIER="`hostname -s`-st: $WINE_VERSION"
 export WINEDLLOVERRIDES="mscoree,mshtml=" #Disable wine pop-ups for Mono and Gecko not being installed
 #export TMUSER="" #your TrackMania Nations Forever username - for tmnations test-profile
 #export TMPWD=""  #your TrackMania Nations Forever password - for tmnations test-profile
-#export STEAMUSER="" #your Steam username - for Tomb Raider (2013) test-profile
-#export STEAMPWD=""  #your Steam password - for Tomb Raider (2013) test-profile
-#export key="" #this should be set to your 3DMark06 Professional Edition serial-number
+
+#settings Steam credentials here is not needed if your Steam (wine) is set to remember password and autologin in your account
+#export STEAMUSER="" #your Steam username - for test-profiles that require Steam, like Tomb Raider (2013) test-profile
+#export STEAMPWD=""  #your Steam password - for test-profiles that require Steam, like Tomb Raider (2013) test-profile
+
+export KEY_3DMARK06="" #this should be set to your 3DMark06 Professional Edition serial-number
