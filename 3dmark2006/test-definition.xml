@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
-<!--Phoronix Test Suite v8.0.0-->
+<!--Phoronix Test Suite v8.0.1-->
 <PhoronixTestSuite>
   <TestInformation>
     <Title>3DMark06</Title>
     <AppVersion>1.2.1</AppVersion>
-    <Description>This runs 3DMark06 Deep Freeze benchmark scene.</Description>
+    <Description>This runs 3DMark06 Graphics Test 2, Firefly Forest benchmark scene.</Description>
     <ResultScale>Frames Per Second</ResultScale>
     <Proportion>HIB</Proportion>
     <TimesToRun>3</TimesToRun>
   </TestInformation>
   <TestProfile>
-    <Version>1.0.0</Version>
+    <Version>1.0.1</Version>
     <SupportedPlatforms>Windows, Linux</SupportedPlatforms>
     <SoftwareType>Game</SoftwareType>
     <TestType>Graphics</TestType>
@@ -21,7 +21,7 @@
     <ProjectURL>http://www.invalid.com</ProjectURL>
     <Maintainer>Dimitris Gounaridis</Maintainer>
   </TestProfile>
-    <TestSettings>
+  <TestSettings>
     <Option>
       <DisplayName>Resolution</DisplayName>
       <Identifier>auto-resolution</Identifier>
@@ -46,11 +46,6 @@
         <Entry>
           <Name>None</Name>
           <Value>0</Value>
-          <Message></Message>
-        </Entry>
-        <Entry>
-          <Name>2x</Name>
-          <Value>2</Value>
           <Message></Message>
         </Entry>
         <Entry>

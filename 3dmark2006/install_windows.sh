@@ -86,7 +86,7 @@ chmod +x ./3dmark2006
 
 unzip -o ahk.zip -d ./ahk
 cd ahk
-./AutoHotKeyU64.exe ../activate_3dmark06.ahk $key &
+./AutoHotKeyU64.exe ../activate_3dmark06.ahk $KEY_3DMARK06 &
 
 cd "C:/Program Files (x86)/Futuremark/3DMark06"
 ./3DMark06.exe -nosysteminfo

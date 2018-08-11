@@ -84,7 +84,7 @@ wine ./3dmark06.exe /s /f1"./setup.iss"
 
 unzip -o ahk.zip -d ./ahk
 cd ahk
-wine ./AutoHotKeyU64.exe ../activate_3dmark06.ahk $key &
+wine ./AutoHotKeyU64.exe ../activate_3dmark06.ahk $KEY_3DMARK06 &
 cd ..
 
 #install dx runtime so game displays properly
