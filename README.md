@@ -80,7 +80,7 @@ phoronix-test-suite.at run {test-name}
 ## Test-Profiles created during GSoC 2018
 Game | Notes
 ------------ | -------------
-[3DMark06](http://openbenchmarking.org/test/moihack/3dmark2006) | Works only for 3DMark06 Professional Edition. Needs ahk and the variable **key** in [pts_prerun.sh](https://github.com/moihack/wineSHOCK/blob/patsh/pts_prerun.sh) being set to your 3DMark06 Professional Edition serial number.
+[3DMark06](http://openbenchmarking.org/test/moihack/3dmark2006) | Works only for 3DMark06 Professional Edition. Needs ahk and the variable **KEY_3DMARK06** in [pts_prerun.sh](https://github.com/moihack/wineSHOCK/blob/patsh/pts_prerun.sh) being set to your 3DMark06 Professional Edition serial number.
 [Aliens vs. Predator DirectX 11 Benchmark Tool](http://openbenchmarking.org/test/moihack/aliens) | Standalone benchmark tool. Needs .NET 3.5 SP1 for the installer. Needs DirectX June 2010 runtime otherwise it displays a blackscreen while still putting stress on the GPU and completing successfully.
 [Crysis Single Player Demo](http://openbenchmarking.org/test/moihack/crysis_sp) | Standalone benchmark tool. Boots to black screen when launched with dx10. [Bug:45125](https://bugs.winehq.org/show_bug.cgi?id=45125) 
 [Far Cry 2 (Steam)](http://openbenchmarking.org/test/moihack/far_cry_2)  | Does not need Steam to be running, but the test-profile searches for the game's executable in Steam's folder. ~~Needs localization hack.~~ Install the game manually on Linux using **Steam for Windows running via wine**.
@@ -113,7 +113,7 @@ That is because when launching wine from PTS sometimes "bugs" occurred mainly re
 Solved thanks to [this](https://github.com/moihack/wineSHOCK/blob/patsh/0003-pts_tests.patch).
 
 ## [**How to create a new test-profile**](https://github.com/moihack/wineSHOCK/how_to_create_test-profile.md)
-_In order for this document to stay "small" in size I've decided to cover the instructions on how to create a new test-profile for PTS in a separate file._
+_In order for this document to stay "small" in size I've decided to cover the instructions on how to create a new test-profile for PTS [in a separate file here](https://github.com/moihack/wineSHOCK/how_to_create_test-profile.md)._
 
 ## Future Improvements
 
