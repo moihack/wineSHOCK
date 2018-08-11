@@ -35,7 +35,7 @@ The [pts_setup.sh](https://github.com/moihack/wineSHOCK/blob/patsh/pts_setup.sh)
 
 ## Running PTS
 
-**Note:** Before running PTS __*in a new terminal window*__ you need to import all variables defiend in [pts_prerun.sh](https://github.com/moihack/wineSHOCK/blob/patsh/pts_prerun.sh) with source command
+**Note:** Before running PTS __*in a new terminal window*__ you need to import all variables defined in [pts_prerun.sh](https://github.com/moihack/wineSHOCK/blob/patsh/pts_prerun.sh) with source command. [pts_prerun.sh](https://github.com/moihack/wineSHOCK/blob/patsh/pts_prerun.sh) is a script that sets your $WINEPREFIX path, along with other wine parameters, as well as any possible needed variables for some test-profiles like Steam credentials and license keys for proprietary benchmarks. It is advised to first have a look [at the file](https://github.com/moihack/wineSHOCK/blob/patsh/pts_prerun.sh) and make any changes you see fit. Afterwards:
 
 from phoronix-test-suite folder:
 ```bash
