@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--Phoronix Test Suite v8.0.1-->
+<PhoronixTestSuite>
+  <SuiteInformation>
+    <Title>DirectX 11 benchmarks</Title>
+    <Version>1.0.0</Version>
+    <TestType>Graphics</TestType>
+    <Description>This runs any DirectX 11 wine compatible benchmarks.</Description>
+    <Maintainer>Dimitris Gounaridis</Maintainer>
+  </SuiteInformation>
+  <Execute>
+    <Test>moihack/tomb_raider</Test>
+    <Arguments></Arguments>
+    <Description></Description>
+  </Execute>
+  <Execute>
+    <Test>moihack/aliens</Test>
+    <Arguments></Arguments>
+    <Description></Description>
+  </Execute>
+</PhoronixTestSuite>
