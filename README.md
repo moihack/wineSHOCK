@@ -112,8 +112,8 @@ There is currently the not-so-well-tested [USE_WINE](https://github.com/phoronix
 That is because when launching wine from PTS sometimes "bugs" occurred mainly revolving around localization issues.~~
 Solved thanks to [this](https://github.com/moihack/wineSHOCK/blob/patsh/0003-pts_tests.patch).
 
-## [**How to create a new test-profile**](https://github.com/moihack/wineSHOCK/how_to_create_test-profile.md)
-_In order for this document to stay "small" in size I've decided to cover the instructions on how to create a new test-profile for PTS [in a separate file here](https://github.com/moihack/wineSHOCK/how_to_create_test-profile.md)._
+## [**How to create a new test-profile**](https://github.com/moihack/wineSHOCK/blob/master/how_to_create_test-profile.md)
+_In order for this document to stay "small" in size I've decided to cover the instructions on how to create a new test-profile for PTS [in a separate file here](https://github.com/moihack/wineSHOCK/blob/master/how_to_create_test-profile.md)._
 
 ## Future Improvements
 
